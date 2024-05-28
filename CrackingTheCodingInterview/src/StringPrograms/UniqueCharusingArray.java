@@ -16,6 +16,8 @@ public class UniqueCharusingArray {
 		{
 			System.out.println("Non Unique Characters");
 		}
+		
+		in.close();
 	}
 	
 	static boolean isUniqueChar(String str)
@@ -30,12 +32,9 @@ public class UniqueCharusingArray {
 			int val = str.charAt(i);
 			if(charSet[val])
 				return false;
-			else
-				charSet[val]=true;
+			charSet[val]=true;
 				
 		}
-		
-		
 		return true;
 	}
 
